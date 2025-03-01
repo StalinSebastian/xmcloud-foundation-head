@@ -22,7 +22,7 @@ type ImageProps = {
 };
 
 const ImageDefault = (props: ImageProps): JSX.Element => (
-  <div className={`component image ${props.params.styles}`.trimEnd()}>
+  <div className={`component image ${props?.params?.styles}`.trimEnd()}>
     <div className="component-content">
       <span className="is-empty-hint">Image</span>
     </div>
@@ -67,7 +67,7 @@ export const Banner = (props: ImageProps): JSX.Element => {
 
   return (
     <div
-      className={`component hero-banner ${props.params.styles} ${classHeroBannerEmpty}`}
+      className={`component hero-banner ${props?.params?.styles} ${classHeroBannerEmpty}`}
       id={id ? id : undefined}
     >
       <div className="component-content sc-sxa-image-hero-banner" style={backgroundStyle}>
@@ -98,7 +98,7 @@ export const Default = (props: ImageProps): JSX.Element => {
     console.log('image src ', getPublicMediaUrl(props.fields.Image?.value?.src));
 
     return (
-      <div className={`component image ${props.params.styles}`} id={id ? id : undefined}>
+      <div className={`component image ${props?.params?.styles}`} id={id ? id : undefined}>
         <div className="component-content">
           {sitecoreContext.pageState === 'edit' || !props.fields.TargetUrl?.value?.href ? (
             <Image />
