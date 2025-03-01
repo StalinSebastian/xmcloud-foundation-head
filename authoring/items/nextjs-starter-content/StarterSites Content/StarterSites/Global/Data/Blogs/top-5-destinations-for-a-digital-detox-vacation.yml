@@ -1,0 +1,82 @@
+﻿---
+ID: "2b18dd94-2f8b-40f4-b7ab-2a468b1be84a"
+Parent: "f0e5d05e-70c5-463c-87c8-091eeae21309"
+Template: "3f65f364-d34d-4d7d-af0c-40ab9571d2f9"
+Path: "/sitecore/content/StarterSites/Global/Data/Blogs/top-5-destinations-for-a-digital-detox-vacation"
+SharedFields:
+- ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
+  Hint: BlogPublishDate
+  Value: 20250227T183000Z
+- ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
+  Hint: BlogUrlSlug
+  Value: "top-5-destinations-for-a-digital-detox-vacation"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e5a6a5-608e-4d2e-9d90-a88cb2bf4813"
+      Hint: BlogCategory
+      Value: |
+        {FF0C23FF-3F4B-4D5D-81E3-12C353994086}
+        {D48C71E0-6DE4-4A02-9D3E-B5E37BA800B4}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T145749Z
+    - ID: "42cac335-d961-42d1-9343-ed1b2f0b1965"
+      Hint: BlogImage
+      Value: |
+        <image mediaid="{9BC96BC9-D893-4C9E-8D7E-B898F6133CFE}" alt="" height="400" width="700" hspace="" vspace="" />
+    - ID: "4c456dbd-c48b-41e2-95b1-dd4a369f19b4"
+      Hint: BlogSummary
+      Value: Unplug and unwind with our curated list of the top 5 destinations for a digital detox vacation, perfect for relaxing in 2025.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "629ad496-dbe2-43d1-b16b-a63241d979b4"
+      Hint: BlogTags
+      Value: |
+        {3EB2D417-5EB5-4A44-B845-E782FC4562D9}
+        {4EBA3CEB-AE65-4B61-AE64-3147B6730167}
+        {20117D0E-1F1F-4D61-9D9D-3CEFD1E279FA}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3e476ff-9283-4a72-aae3-f94afc65bf11"
+    - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
+      Hint: BlogAuthor
+      Value: "{927D4A6D-21FB-42B7-B3B0-3BA510E9F9BC}"
+    - ID: "b54a8738-9243-45fb-a7bc-ab71ee1b7e41"
+      Hint: BlogHeading
+      Value: Top 5 Destinations for a Digital Detox Vacation
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "cd74eb9d-a3c5-4ef9-a668-8408a3775f4f"
+      Hint: BlogContent
+      Value: |
+        <div>In today&rsquo;s hyper-connected world, a digital detox vacation can be the perfect way to recharge. Here are our top 5 destinations for 2025:<br />
+        <ol class="marker:text-secondary">
+            <li class="break-words"><strong>Bali, Indonesia</strong>: Known for its lush landscapes and serene beaches, Bali offers yoga retreats and meditation centers that encourage you to disconnect.</li>
+            <br />
+            <li class="break-words"><strong>Tuscany, Italy</strong>: Rolling hills, quaint villages, and farm-to-table dining make Tuscany a haven for those seeking peace.</li>
+            <br />
+            <li class="break-words"><strong>Banff National Park, Canada</strong>: Surrounded by stunning mountains and lakes, Banff is ideal for hiking and wildlife spotting without Wi-Fi.</li>
+            <br />
+            <li class="break-words"><strong>Santorini, Greece</strong>: The whitewashed architecture and crystal-clear waters of Santorini provide a picturesque backdrop for relaxation.</li>
+            <br />
+            <li class="break-words"><strong>Sedona, Arizona, USA</strong>: Famous for its vortex energy sites, Sedona is a spiritual retreat for those looking to reconnect with nature.<br />
+            Pack your bags, leave your devices behind, and embark on a journey to find inner peace in one of these stunning destinations.</li>
+        </ol>
+        </div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T175243Z

@@ -8,6 +8,58 @@
                 "name": "DefaultRenderingHost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "scope": "singleItem"
+            },
+            {
+                "name": "StarterSites Tempates",
+                "path": "/sitecore/templates/Project/StarterSites"
+            },
+            {
+                "name": "StarterSites Branches",
+                "path": "/sitecore/templates/Branches/Project/StarterSites"
+            },
+            {
+                "name": "StarterSites Layouts",
+                "path": "/sitecore/layout/Layouts/Project/StarterSites"
+            },
+            {
+                "name": "StarterSites Renderings",
+                "path": "/sitecore/layout/Renderings/Project/StarterSites"
+            },
+            {
+                "name": "StarterSites Settings",
+                "path": "/sitecore/system/Settings/Project/StarterSites"
+            },
+            {
+                "name": "StarterSites Media Library",
+                "path": "/sitecore/media library/Project/StarterSites"
+            },
+            {
+                "name": "PlaySites Tempates",
+                "path": "/sitecore/templates/Project/PlaySites"
+            },
+            {
+                "name": "PlaySites Branches",
+                "path": "/sitecore/templates/Branches/Project/PlaySites"
+            },
+            {
+                "name": "PlaySites Renderings",
+                "path": "/sitecore/layout/Renderings/Project/PlaySites"
+            },
+            {
+                "name": "PlaySites Settings",
+                "path": "/sitecore/system/Settings/Project/PlaySites"
+            },
+            {
+                "name": "PlaySites Media Library",
+                "path": "/sitecore/media library/Project/PlaySites"
+            },
+            {
+                "name": "Datasource Workflow",
+                "path": "/sitecore/system/Workflows/Datasource Workflow"
+            },
+            {
+                "name": "Datasource Workflow Action",
+                "path": "/sitecore/system/Workflows/Sample Workflow/Draft/Submit/Datasource Workflow Action"
             }
         ]
     }

@@ -72,6 +72,7 @@ services:
       - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
       - ${HOST_LICENSE_FOLDER}:c:\license
+    mem_limit: 8GB
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
       RENDERING_HOST_INTERNAL_URI: "http://rendering-nextjs:3000"
@@ -83,4 +84,8 @@ services:
       ## Development Environment Optimizations
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,DebugOn,DiagnosticsOff,InitMessagesOff
       Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM
+      EXPERIENCE_EDGE_ENABLED: "false"
+      SITECORE_SPE_ELEVATION: "Allow"
+      XmCloud_PublishingApi_Enabled: "false"
+      Sitecore_GraphQL_ExposePlayground: "true"
     entrypoint: powershell -Command "& C:/tools/entrypoints/iis/XmCloudDevelopment.ps1"

@@ -1,0 +1,41 @@
+﻿---
+ID: "927d4a6d-21fb-42b7-b3b0-3ba510e9f9bc"
+Parent: "333d8015-d585-4ab6-b20b-764047722a02"
+Template: "454e36ac-ae03-466d-9790-a78368a40631"
+Path: /sitecore/content/StarterSites/Global/Data/Blog Authors/Jane Smith
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03aefc68-4d61-4957-ae20-b8ad4a76c298"
+      Hint: BlogAuthorName
+      Value: Jane Smith
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T150035Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5e65f660-7b0b-427a-956e-8608edb0ecc0"
+      Hint: BlogAuthorBio
+      Value: <div>Jane is a travel writer passionate about sustainable tourism and mindful travel experiences.</div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "af4d448a-87cf-4295-afa4-91da9c54f015"
+    - ID: "b8e46bee-4eed-4839-8d1f-064c4b656673"
+      Hint: BlogAuthorPhoto
+      Value: |
+        <image mediaid="{F854DFD8-EA8C-4AE6-8DA1-0D67CEA9C9B9}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T153735Z

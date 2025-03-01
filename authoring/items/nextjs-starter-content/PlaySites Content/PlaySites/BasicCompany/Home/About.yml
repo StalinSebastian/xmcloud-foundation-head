@@ -1,0 +1,68 @@
+﻿---
+ID: "756d73df-2404-4bdc-85f6-434f2c81622f"
+Parent: "a5e4b1ac-a32a-44a2-b1c1-3f3a0cab5cf6"
+Template: "a1a0a586-4483-47ef-b545-05ad69958937"
+Path: /sitecore/content/PlaySites/BasicCompany/Home/About
+BranchID: "aa757cc9-f2da-4f78-a33d-9d382d5fcf92"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{82376382-C7A4-409E-A6D5-3E0CE65BB6AA}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E2A8FA3E-F08E-4C3E-A386-E372382A2B91}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7bDE6F4E10-7D28-478F-AF5E-CAA6ED2A95E5%7d%7c%7bE817AB22-8438-4E68-98C7-8BBA0C43D80E%7d%7c%7b2F7212BC-D4A1-4835-90D8-55832E9A9495%7d%7c%7bE7754F65-96B0-4CB1-9946-CACD843E2788%7d%7c%7b94E6DCAA-33E1-4B74-82D0-99D00D5A9E0B%7d%7c%7b1B665E83-ED0A-4A1A-BFB9-BC213B247508%7d%7c%7b974AEA8C-2309-4EBB-89E5-DAB3FCD319B0%7d%7c%7bD631B9B5-ABBA-4CC3-87FB-5BB41672EB34%7d%7c%7bAB25F813-4D4D-4E1A-8CAE-28229713AB80%7d%7c%7b4840CD9E-07BF-4BEC-B184-454DA6B01B52%7d%7c%7b512809F1-0145-4C31-B57E-F4516AC02A4F%7d%7c%7b8B1FC465-2D00-4E18-92CD-4FC3CE8E30EA%7d%7c%7b9561DE30-47D6-48C7-8989-AA5290A7411E%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{814D8C05-2526-4A81-8F34-8DC013BC06D0}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/Text 1"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b959FDFBB-4691-4A17-816F-7A5330B8216A%7d%7c%7b175CB6DA-CF89-4D56-888C-EB79F514D12F%7d%7c%7b7DF615F7-0A53-42E1-A164-2B36D6126314%7d&amp;FieldNames=%7bBF67DBE7-6AC4-4A46-9FFC-CBF8CC658629%7d"
+          s:ph="/headless-main/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B8E694EC-3576-4CC6-8628-AEE286A9AB38}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250222T173841Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: About
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc02e06e-8f91-48c4-9c4a-611a249d2e12"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250222T173849Z
+    - ID: "f48c89eb-d9d1-41ec-bcb4-7a6ea7445d21"
+      Hint: Title
+      Value: About

@@ -1,0 +1,34 @@
+﻿---
+ID: "b4069fe7-60d4-47a7-8983-5bf1795c0b26"
+Parent: "f64a16b3-43c3-420c-b87a-b6414b792d4b"
+Template: "f64a16b3-43c3-420c-b87a-b6414b792d4b"
+Path: /sitecore/templates/Project/StarterSites/General Components/Datasource/Text Teaser/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250224T104750Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "6bb3c260-1b0a-4c1d-a1d3-5923459b305b"
+      Hint: TeaserHeading
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "366c30d0-3e30-41ac-a6f0-1f1192c3a348"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250224T104756Z

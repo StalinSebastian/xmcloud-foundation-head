@@ -1,0 +1,26 @@
+﻿---
+ID: "b7265022-b872-42d9-8258-c7c46f9861cf"
+Parent: "91ab77ae-de39-45d5-9754-1d03c49abf12"
+Template: "91ab77ae-de39-45d5-9754-1d03c49abf12"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/Datasource/BlogTag/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c46db7c-b3f4-4287-a07c-9a4c7b45e36a"
+      Hint: BlogTagName
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T122701Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fdb571af-81aa-4d59-807f-c99e1a0ca57c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T153344Z

@@ -1,0 +1,29 @@
+﻿---
+ID: "9a6f85ba-90ca-4ab8-8baf-c5fb3974dd05"
+Parent: "8a97c445-30ab-415e-8ecc-f5bd0b85b1c8"
+Template: "ac219c0f-6db7-4e5c-a2d1-2e0cff6fa76a"
+Path: "/sitecore/content/StarterSites/nextjs-starter/Data/Text Teasers/Text Teaser Basic - Home"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b621f1d-a46a-40c5-b6be-726ffb2530b1"
+      Hint: TeaserHeading
+      Value: "Text Teaser Basic - Home"
+    - ID: "2141155c-15ce-41fd-9c35-e5fdfc82b9f1"
+      Hint: TeaserContent
+      Value: "Text Teaser Basic - Home"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250225T125717Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1ece35ec-0c3f-44a9-8ac5-b81f3e493ebd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250225T125945Z

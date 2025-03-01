@@ -1,0 +1,33 @@
+﻿---
+ID: "36b4043e-9f1e-4979-8080-60a8eaa229e5"
+Parent: "b9c48b24-9fb2-4033-adfb-579d1d8f89d2"
+Template: "b9c48b24-9fb2-4033-adfb-579d1d8f89d2"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/Datasource/Blog Comments Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {D1A56063-E983-46D9-A670-D6B40A46CF07}
+    {B9C48B24-9FB2-4033-ADFB-579D1D8F89D2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b6b3050-977f-4c23-8f59-395ce18a4970"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T130039Z

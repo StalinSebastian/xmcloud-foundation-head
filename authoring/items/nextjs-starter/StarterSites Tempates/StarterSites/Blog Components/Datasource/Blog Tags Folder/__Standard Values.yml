@@ -1,0 +1,33 @@
+﻿---
+ID: "7cefa489-2d30-4b10-8ed9-5c29ca8b3ea8"
+Parent: "f6c3a381-bb7c-4e7c-a58e-fe989b0f5814"
+Template: "f6c3a381-bb7c-4e7c-a58e-fe989b0f5814"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/Datasource/Blog Tags Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {91AB77AE-DE39-45D5-9754-1D03C49ABF12}
+    {F6C3A381-BB7C-4E7C-A58E-FE989B0F5814}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77130673-3d85-42fa-96db-c31727afd82a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T143052Z

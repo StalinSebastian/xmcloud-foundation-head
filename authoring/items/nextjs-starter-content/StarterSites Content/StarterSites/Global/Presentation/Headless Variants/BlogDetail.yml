@@ -1,0 +1,39 @@
+﻿---
+ID: "e764f95e-4e33-4e44-9f96-bafb967396b7"
+Parent: "b1374c39-e63b-460b-8ed2-ff1dbb51c9b9"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/StarterSites/Global/Presentation/Headless Variants/BlogDetail
+BranchID: "b16d5ef5-fd27-44cf-947c-08e845fc7803"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{15D82F21-A6B9-4E8C-ACF3-03D8680D4275}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T142011Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e342813c-0e9c-4a53-b242-1e05199db612"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T142012Z

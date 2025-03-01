@@ -1,0 +1,82 @@
+﻿---
+ID: "26fa86be-e927-40ed-95ce-249147c39cb0"
+Parent: "f0e5d05e-70c5-463c-87c8-091eeae21309"
+Template: "3f65f364-d34d-4d7d-af0c-40ab9571d2f9"
+Path: /sitecore/content/StarterSites/Global/Data/Blogs/A Beginners Guide to Nextjs with Sitecore XM Cloud
+SharedFields:
+- ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
+  Hint: BlogPublishDate
+  Value: 20250227T183000Z
+- ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
+  Hint: BlogUrlSlug
+  Value: "a-beginners-guide-to-nextjs-with-sitecore-xm-cloud"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e5a6a5-608e-4d2e-9d90-a88cb2bf4813"
+      Hint: BlogCategory
+      Value: |
+        {D66D0B2C-C401-4083-84DE-5CAF9386D1F2}
+        {EEC242DA-3962-470A-BE21-1F22C893A40F}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T145800Z
+    - ID: "42cac335-d961-42d1-9343-ed1b2f0b1965"
+      Hint: BlogImage
+      Value: |
+        <image mediaid="{F7F8343E-D702-4F2C-8654-2ECB34B6E5AF}" alt="" height="400" width="700" hspace="" vspace="" />
+    - ID: "4c456dbd-c48b-41e2-95b1-dd4a369f19b4"
+      Hint: BlogSummary
+      Value: Learn the basics of building a headless website with Next.js and Sitecore XM Cloud, from setup to deployment.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "629ad496-dbe2-43d1-b16b-a63241d979b4"
+      Hint: BlogTags
+      Value: |
+        {2D6CE804-042F-4BAF-9951-0B2539DF5564}
+        {60261E6C-2D4A-4265-9C53-360B231D28BF}
+        {B8208AE4-C716-4BDD-A9F4-49EBD71C629D}
+        {209C42D0-4F6C-45D5-A628-C00E22561448}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "08f17254-6d4a-4afb-9e48-38a40cd25dea"
+    - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
+      Hint: BlogAuthor
+      Value: "{0687957B-1A71-493C-83FA-A2E441EF6548}"
+    - ID: "b54a8738-9243-45fb-a7bc-ab71ee1b7e41"
+      Hint: BlogHeading
+      Value: A Beginner’s Guide to Next.js with Sitecore XM Cloud
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "cd74eb9d-a3c5-4ef9-a668-8408a3775f4f"
+      Hint: BlogContent
+      Value: |
+        <div>
+        <div>If you&rsquo;re new to headless CMS and modern JavaScript frameworks, combining Next.js with Sitecore XM Cloud is a fantastic way to build scalable, performant websites. Here&rsquo;s a step-by-step guide to get you started:<br />
+        <ol class="marker:text-secondary">
+            <li class="break-words"><strong>Set Up Your Environment</strong>: Install Node.js, initialize a Next.js app, and connect it to Sitecore XM Cloud using the <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">@sitecore-jss/sitecore-jss-nextjs</span> package.</li>
+            <br />
+            <li class="break-words"><strong>Define Your Content Structure</strong>: In Sitecore, create templates for your pages and components, such as a Blog Post template with fields for Title, Body, and Featured Image.</li>
+            <br />
+            <li class="break-words"><strong>Fetch Data with GraphQL</strong>: Use Sitecore&rsquo;s Edge GraphQL API to query content from XM Cloud and render it in your Next.js components.</li>
+            <br />
+            <li class="break-words"><strong>Build Components</strong>: Create reusable components like BlogListing and BlogDetail, ensuring they support Sitecore Pages for inline editing.</li>
+            <br />
+            <li class="break-words"><strong>Deploy to Vercel</strong>: Host your Next.js app on Vercel for seamless deployment and scaling.<br />
+            With Next.js&rsquo;s Static Site Generation (SSG) and Incremental Static Regeneration (ISR), you can achieve lightning-fast performance while leveraging Sitecore&rsquo;s robust content management features. This combination is perfect for beginners and seasoned developers alike.</li>
+        </ol>
+        </div>
+        </div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T175254Z

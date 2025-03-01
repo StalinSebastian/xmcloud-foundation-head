@@ -1,0 +1,52 @@
+﻿---
+ID: "ff959c01-42ad-4107-82de-a8b42d133d2e"
+Parent: "cf68ee6d-5666-4d67-95c4-f1a150630f75"
+Template: "399f943c-f8f8-4155-a10e-0ae9deea8736"
+Path: "/sitecore/content/StarterSites/nextjs-starter/Home/Blogs"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{C1B3F175-38F3-4890-BD79-E902E9719B13}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{67035BD9-07C3-4611-B526-1353A30CC256}"
+          s:ds="{F0E5D05E-70C5-463C-87C8-091EEAE21309}"
+          s:id="{73515BE2-FAB0-4852-B7B8-11D421DCD3F8}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11a4de69-7c8e-4baa-8181-68d95ffadb80"
+      Hint: Title
+      Value: Blogs
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T142259Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Blogs
+    - ID: "57681098-b1e6-4570-aab9-5fb4568e978f"
+      Hint: BlogListingTitle
+      Value: Blogs
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6f36d5c5-0ac6-4832-a682-ed9920adec3f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T164257Z

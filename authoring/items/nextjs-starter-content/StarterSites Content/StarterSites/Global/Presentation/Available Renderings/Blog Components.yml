@@ -1,0 +1,43 @@
+﻿---
+ID: "9290ec20-91db-459b-888e-6aef2a03b8b0"
+Parent: "290d1379-857c-4aec-a9a1-fc2a950ee7f3"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/StarterSites/Global/Presentation/Available Renderings/Blog Components
+BranchID: "8c67a13f-f22a-4ec7-9687-499344536c38"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {73515BE2-FAB0-4852-B7B8-11D421DCD3F8}
+    {B7ED78E2-F041-476A-B130-9CD194A6735E}
+    {9649FDC8-455E-4E22-BCB1-F35A01D6B4CB}
+    {13D06175-6BCA-4E8F-BD01-0AD389D1EF81}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EC94AE38-4680-4E8E-A34E-46F29A4FA57F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T142010Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5c3fc295-dd73-4259-8435-c1178a072f1a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T142010Z

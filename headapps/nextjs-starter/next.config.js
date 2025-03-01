@@ -53,6 +53,21 @@ const nextConfig = {
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
       },
+      {
+        protocol: "https",
+        hostname: "xmcloudcm.localhost", // Replace with your actual external hostname
+        pathname: "/-/jssmedia/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cm", // Your internal CMS hostname
+        pathname: "/-/jssmedia/**",
+      },
+      {
+        protocol: "http",
+        hostname: "cm", // Your internal CMS hostname
+        pathname: "/-/jssmedia/**",
+      }
     ]
   },
 

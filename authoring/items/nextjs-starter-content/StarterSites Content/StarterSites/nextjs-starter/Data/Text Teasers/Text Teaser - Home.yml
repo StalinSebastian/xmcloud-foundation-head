@@ -1,0 +1,40 @@
+﻿---
+ID: "4b8b0b08-bd94-41fa-932e-a601a6a2db8b"
+Parent: "8a97c445-30ab-415e-8ecc-f5bd0b85b1c8"
+Template: "f64a16b3-43c3-420c-b87a-b6414b792d4b"
+Path: "/sitecore/content/StarterSites/nextjs-starter/Data/Text Teasers/Text Teaser - Home"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b3f5d5a-a9b6-44d7-846e-572d31897d33"
+      Hint: TeaserContent
+      Value: Explore the latest advancements in AI and Machine Learning. Get expert insights, tutorials, and industry updates to accelerate your learning journey.
+    - ID: "1b53029b-1bab-4d13-8fb7-6f9428633994"
+      Hint: TeaserIcon
+      Value: |
+        <image mediaid="{A4128779-2FEC-4E81-9440-B9D93B5601B2}" alt="Teaser Icon" height="200" width="200" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250225T125729Z
+    - ID: "391b222a-5030-40c7-bc1c-40894d6f57e6"
+      Hint: TeaserSubHeading
+      Value: "Stay Ahead with Cutting-Edge Tech Trends"
+    - ID: "6bb3c260-1b0a-4c1d-a1d3-5923459b305b"
+      Hint: TeaserHeading
+      Value: "Unlock Exclusive AI & ML Insights!"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56d40d23-92b3-4a91-84ee-a645221a47ae"
+    - ID: "a2fda6b7-2376-4b14-baa7-2b94f71c89e1"
+      Hint: TeaserLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{22471369-9C00-4BC4-806B-B943CEB53190}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250225T141815Z

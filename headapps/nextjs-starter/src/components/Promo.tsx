@@ -20,6 +20,12 @@ type PromoProps = {
   fields: Fields;
 };
 
+// Replace internal CMS hostname with external one
+const getPublicMediaUrl = (url: string | undefined) => {
+  if (!url) return url;
+  return url.replace('https://cm', 'http://cm'); // Update with your external CMS hostname
+};
+
 const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
   <div className={`component promo ${props.params.styles}`}>
     <div className="component-content">
@@ -28,14 +34,33 @@ const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
   </div>
 );
 
+interface PromoIconProps {
+  promoIcon: ImageField;
+}
+
+const PromoIcon = ({ promoIcon }: PromoIconProps): JSX.Element => (
+  <JssImage
+    field={{
+      ...promoIcon,
+      value: {
+        ...promoIcon?.value,
+        src: getPublicMediaUrl(promoIcon?.value?.src),
+      },
+    }}
+  />
+);
+
 export const Default = (props: PromoProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+
+  console.log('Promo image', getPublicMediaUrl(props.fields.PromoIcon?.value?.src));
+
   if (props.fields) {
     return (
-      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined}>
+      <div className={`component promo ${props.params.styles}`} id={id || undefined}>
         <div className="component-content">
           <div className="field-promoicon">
-            <JssImage field={props.fields.PromoIcon} />
+            <PromoIcon promoIcon={props.fields.PromoIcon} />
           </div>
           <div className="promo-text">
             <div>
@@ -59,7 +84,7 @@ export const WithText = (props: PromoProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined}>
+      <div className={`component promo ${props.params.styles}`} id={id || undefined}>
         <div className="component-content">
           <div className="field-promoicon">
             <JssImage field={props.fields.PromoIcon} />

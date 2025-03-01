@@ -1,0 +1,72 @@
+﻿---
+ID: "22471369-9c00-4bc4-806b-b943ceb53190"
+Parent: "cf68ee6d-5666-4d67-95c4-f1a150630f75"
+Template: "83af133f-9899-40ac-b681-d174e833b746"
+Path: "/sitecore/content/StarterSites/nextjs-starter/Home/About"
+BranchID: "aa757cc9-f2da-4f78-a33d-9d382d5fcf92"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2D33400E-03B3-4D0F-8895-002B9FA995AC}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{161F740E-5FAD-459C-9C5C-3E75F013F8C0}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7bFFA64F67-C224-47D1-848A-87D76408A406%7d%7c%7b458A9C94-0E1C-4A2E-940B-AB9D06C3CAEC%7d%7c%7bD6BC83E2-154E-4AF6-8EBC-C0B59EC24CED%7d%7c%7bD24502E0-E276-4BDC-94C3-230F8A5B3049%7d%7c%7b59099FE8-6093-4C8C-A63C-6F77A3D31733%7d%7c%7b31EC2B27-4131-40F5-A294-80F7FBB882FF%7d%7c%7b959ABCBF-68BB-4B6D-84A2-7F3563F869DE%7d%7c%7bF804DD27-8B21-4832-B863-1093C8439AAC%7d%7c%7b5BF60490-0632-4B30-ADE2-8D2732E6F116%7d%7c%7b76B566B1-E0F5-4EE3-BB21-836A07C0EDF4%7d%7c%7bA2090499-770D-4BF2-9790-59F6A375E2EF%7d%7c%7b6B0827E9-6959-449B-8B10-61ADAE6678C2%7d%7c%7bA649DD29-8EEB-4547-A81E-0D33A37C01C9%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{67115C14-E21C-4CDC-AB85-3845A506C85B}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/Text 1"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b959FDFBB-4691-4A17-816F-7A5330B8216A%7d%7c%7b175CB6DA-CF89-4D56-888C-EB79F514D12F%7d%7c%7b7DF615F7-0A53-42E1-A164-2B36D6126314%7d&amp;FieldNames=%7bE738834E-6A06-48C8-9087-D3F35825830E%7d"
+          s:ph="/headless-main/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B8E694EC-3576-4CC6-8628-AEE286A9AB38}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: |
+        <r owner="sitecore\ssebastianarokya@gmail.com" date="20250228T110354Z" />
+    - ID: "11a4de69-7c8e-4baa-8181-68d95ffadb80"
+      Hint: Title
+      Value: About
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250222T175144Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: About
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a70fac53-8faf-4c92-aee7-472cc9618a37"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T110354Z

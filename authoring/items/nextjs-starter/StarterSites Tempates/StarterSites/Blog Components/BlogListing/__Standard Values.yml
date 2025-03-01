@@ -1,0 +1,32 @@
+﻿---
+ID: "717f8749-f541-495b-a5f4-7ebe408705e8"
+Parent: "b0353120-4f98-4cd1-960d-cd99a754de70"
+Template: "b0353120-4f98-4cd1-960d-cd99a754de70"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/BlogListing/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {57D41D87-93E9-47ED-A7D7-DDCBADEA3E80}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250228T122553Z
+    - ID: "57681098-b1e6-4570-aab9-5fb4568e978f"
+      Hint: BlogsOverviewTitle
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5104d738-2548-4b4f-aa46-ba78bc93b5c3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T135532Z

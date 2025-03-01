@@ -29,9 +29,18 @@ const ImageDefault = (props: ImageProps): JSX.Element => (
   </div>
 );
 
+// Replace internal CMS hostname with external one
+const getPublicMediaUrl = (url: string | undefined) => {
+  if (!url) return url;
+  return url.replace('https://cm', 'https://xmcloudcm.localhost'); // Update with your external CMS hostname
+};
+
 export const Banner = (props: ImageProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
+
+  console.log('sitecoreContext', sitecoreContext);
+
   const isPageEditing = sitecoreContext.pageEditing;
   const isMetadataMode = sitecoreContext?.editMode === EditMode.Metadata;
   const classHeroBannerEmpty =
@@ -39,7 +48,7 @@ export const Banner = (props: ImageProps): JSX.Element => {
       ? 'hero-banner-empty'
       : '';
   const backgroundStyle = (props?.fields?.Image?.value?.src && {
-    backgroundImage: `url('${props.fields.Image.value.src}')`,
+    backgroundImage: `url('${getPublicMediaUrl(props.fields.Image?.value?.src)}')`,
   }) as CSSProperties;
   const modifyImageProps = !isMetadataMode
     ? {
@@ -72,8 +81,21 @@ export const Default = (props: ImageProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
-    const Image = () => <JssImage field={props.fields.Image} />;
+    //const Image = () => <JssImage field={props.fields.Image} />;
+    const Image = () => (
+      <JssImage
+        field={{
+          ...props.fields.Image,
+          value: {
+            ...props.fields.Image?.value,
+            src: getPublicMediaUrl(props.fields.Image?.value?.src),
+          },
+        }}
+      />
+    );
     const id = props.params.RenderingIdentifier;
+
+    console.log('image src ', getPublicMediaUrl(props.fields.Image?.value?.src));
 
     return (
       <div className={`component image ${props.params.styles}`} id={id ? id : undefined}>

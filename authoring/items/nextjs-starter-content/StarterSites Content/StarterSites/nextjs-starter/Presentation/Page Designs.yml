@@ -1,0 +1,66 @@
+﻿---
+ID: "fd9df076-590a-4af2-9d4f-99e1c9ef5224"
+Parent: "12589075-4faa-4898-bd77-8c03e363a4a6"
+Template: "c9d8066b-f2f0-473d-9cd6-a428eed28d92"
+Path: "/sitecore/content/StarterSites/nextjs-starter/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "23c23f7b-2c76-4d3c-9b88-16b7a6d52d89"
+  Hint: DesignRules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{9500B60E-ABA7-4419-A958-60B781292763}">
+        <conditions>
+          <and
+            uid="B7EECDB6651A4E3D853975C1FC41A3DE">
+            <condition
+              id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+              uid="A7CC90A0C22244CB9DAE1AE549DE7015"
+              templateid="{57D41D87-93E9-47ED-A7D7-DDCBADEA3E80}" />
+            <condition
+              id="{DA0D1AEA-0144-4A40-9AF0-3123526C9163}"
+              uid="CBED6FA8D95B4B168F4F23A1DB8A4ECA"
+              fieldname="BlogContent" />
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{5DC0A863-11FE-4A26-9F09-D8EADEA81E9A}"
+            uid="AFCE7EAF9A054D6A9DCCB31820F3E7AC"
+            pagedesignid="{4F59A0E4-B5AB-4D50-92C9-80AD662AF600}" />
+        </actions>
+      </rule>
+    </ruleset>
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7b83AF133F-9899-40AC-B681-D174E833B746%7d%3d%257BD3D04DF5-C407-4964-9917-914FDEFDAE16%257D%26%7b399F943C-F8F8-4155-A10E-0AE9DEEA8736%7d%3d%257B0D22DB01-315C-406A-ADF1-A6EA48EFA607%257D%26%7b57D41D87-93E9-47ED-A7D7-DDCBADEA3E80%7d%3d%257B44DDBA2C-A701-4066-B5EB-E5E9A3B09D09%257D"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250222T175122Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6e02affa-4652-4a88-a5e4-23e7525b31c3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250228T123718Z

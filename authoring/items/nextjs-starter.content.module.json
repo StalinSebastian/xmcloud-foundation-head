@@ -1,0 +1,17 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "nextjs-starter-content",
+    "items": {
+        "path": "nextjs-starter-content",
+        "includes": [
+            {
+                "name": "StarterSites Content",
+                "path": "/sitecore/content/StarterSites"
+            },
+            {
+                "name": "PlaySites Content",
+                "path": "/sitecore/content/PlaySites"
+            }
+        ]
+    }
+}
