@@ -1,7 +1,7 @@
-# XM Cloud Front End Application Starter Kits
+# XM Cloud Front End Application Starter Kits + Blogs with GraphQL
 
 This repository contains the Next.js Starter Kit, and the SPA Starters monorepo (which includes a Node Proxy Application and and SPA starter apps) for Sitecore XM Cloud Development. It is intended to get developers up and running quickly with a new front end project that is integrated with Sitecore XM Cloud.
-
+![alt text](image.png)
 ## GitHub Template
 
 This Github repository is a template that can be used to create your own repository. To get started, click the `Use this template` button at the top of the repository.

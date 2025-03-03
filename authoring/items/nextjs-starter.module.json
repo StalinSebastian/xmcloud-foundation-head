@@ -26,6 +26,10 @@
                 "path": "/sitecore/layout/Renderings/Project/StarterSites"
             },
             {
+                "name": "StarterSites Placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/StarterSites"
+            },
+            {
                 "name": "StarterSites Settings",
                 "path": "/sitecore/system/Settings/Project/StarterSites"
             },

@@ -1,17 +1,18 @@
 ﻿---
-ID: "eb8f0cc3-09f9-426f-9a19-c14bedcfb0ea"
-Parent: "ea959001-2353-41fa-b2bd-af567a9f4038"
-Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
-Path: "/sitecore/content/StarterSites/Global/Presentation/Placeholder Settings/Blogs/blog-detail-main"
+ID: "9f666ad0-3971-4f79-95a8-21523c34fcf8"
+Parent: "80c92284-0250-413d-a7d1-278545a7c961"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/BlogPost_2
 SharedFields:
-- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
-  Hint: Placeholder Key
-  Value: "blog-detail-main"
-- ID: "e391b526-d0c5-439d-803e-17512eae6222"
-  Hint: Allowed Controls
-  Value: |
-    {B7ED78E2-F041-476A-B130-9CD194A6735E}
-    {13D06175-6BCA-4E8F-BD01-0AD389D1EF81}
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/book_open.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{FBFB3465-1B7B-479E-90D0-C0087493C1FF}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250228T144421Z
+      Value: 20250228T115412Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -30,11 +31,11 @@ Languages:
         sitecore\ssebastianarokya@gmail.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3975a340-74ad-45c2-a50e-38f54fdc71a8"
+      Value: "2118bb05-5121-4098-9867-65fcf884968e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T144448Z
+      Value: 20250303T033658Z

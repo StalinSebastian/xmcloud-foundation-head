@@ -15,12 +15,36 @@ SharedFields:
       p:p="1">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{CC969700-D965-4623-83D2-7CBC8DD00C9F}"
+          p:before="*"
+          s:key="column-left"
+          s:md="{5DFC5FD5-8856-4A70-BB3B-2ED0E20E6963}" />
+        <p
+          uid="{341F08DF-E004-4301-9463-1ED853CC2DAA}"
+          p:after="p[@uid='{CC969700-D965-4623-83D2-7CBC8DD00C9F}']"
+          s:key="column-right"
+          s:md="{6B2EADAE-51C9-4E5C-9112-B463233E2CC3}" />
         <r
-          uid="{67035BD9-07C3-4611-B526-1353A30CC256}"
+          uid="{92A704EB-010D-4EFA-8ED1-D361FE2E3B59}"
+          p:after="p[@uid='{341F08DF-E004-4301-9463-1ED853CC2DAA}']"
+          s:ds=""
+          s:id="{33975D7F-A147-485E-96FA-65C32D07F505}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier=%7B15CABDFF-FFD9-48F4-826D-A4C3D7868D3A%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1&amp;ColumnWidth1=%7B2C630D25-6B3B-41F2-8365-4D8FEEC06B8F%7D&amp;ColumnWidth2=%7BF6FDDF61-C60E-46D1-A4A7-978EBDBE9620%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1=%7BACAB11CE-3630-4297-B1B2-B2728DC2DF1E%7D&amp;Styles2=%7BACAB11CE-3630-4297-B1B2-B2728DC2DF1E%7D%7C%7BB202DD79-812D-4CC8-B6E7-1FF6E95EA096%7D&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8"
+          s:ph="headless-main" />
+        <r
+          uid="{E7DC5067-80C6-44F3-B52D-5719E4829A48}"
+          p:after="r[@uid='{92A704EB-010D-4EFA-8ED1-D361FE2E3B59}']"
           s:ds="{F0E5D05E-70C5-463C-87C8-091EEAE21309}"
           s:id="{73515BE2-FAB0-4852-B7B8-11D421DCD3F8}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
-          s:ph="/headless-main" />
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/column-left" />
+        <r
+          uid="{FC86960E-EA5D-4E5C-A5AE-4A0B0D472944}"
+          p:after="*[1=2]"
+          s:id="{9649FDC8-455E-4E22-BCB1-F35A01D6B4CB}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/column-right" />
       </d>
     </r>
 Languages:
@@ -28,9 +52,24 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{92A704EB-010D-4EFA-8ED1-D361FE2E3B59}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier=%7B15CABDFF-FFD9-48F4-826D-A4C3D7868D3A%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1" />
+          </d>
+        </r>
     - ID: "11a4de69-7c8e-4baa-8181-68d95ffadb80"
       Hint: Title
       Value: Blogs
+    - ID: "1adea1cf-1b89-4c66-b77c-d5183a8f8567"
+      Hint: BlogListingDescription
+      Value: Blogs Listing page
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250228T142259Z
@@ -42,11 +81,11 @@ Languages:
       Value: Blogs
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6f36d5c5-0ac6-4832-a682-ed9920adec3f"
+      Value: "1102c1b9-ecfc-4926-8cf1-9e6f8530a2cd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T164257Z
+      Value: 20250303T050657Z

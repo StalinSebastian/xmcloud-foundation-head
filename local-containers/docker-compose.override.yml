@@ -26,6 +26,8 @@ services:
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       SITECORE_API_KEY: "${SITECORE_API_KEY_APP_STARTER}"
       DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
+      SITECORE_MEDIA_URL: "https://${CM_HOST}/"
+      SITECORE_GRAPHQL_ENDPOINT: "https://${CM_HOST}/sitecore/api/graph/edge"
     depends_on:
       - cm
       - nodejs

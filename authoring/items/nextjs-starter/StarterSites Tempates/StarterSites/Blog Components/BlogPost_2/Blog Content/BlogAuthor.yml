@@ -1,15 +1,18 @@
 ﻿---
-ID: "6b2eadae-51c9-4e5c-9112-b463233e2cc3"
-Parent: "ea959001-2353-41fa-b2bd-af567a9f4038"
-Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
-Path: "/sitecore/content/StarterSites/Global/Presentation/Placeholder Settings/Blogs/blog-related-posts"
+ID: "6422ed40-2dcb-4e3f-822e-72b3eeba21dd"
+Parent: "0ffea00a-3951-4470-a6ce-7353fa5d35ee"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/StarterSites/Blog Components/BlogPost_2/Blog Content/BlogAuthor
 SharedFields:
-- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
-  Hint: Placeholder Key
-  Value: "blog-related-posts"
-- ID: "e391b526-d0c5-439d-803e-17512eae6222"
-  Hint: Allowed Controls
-  Value: "{9649FDC8-455E-4E22-BCB1-F35A01D6B4CB}"
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Blog Authors Folder']/*"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplink
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -17,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250228T144456Z
+      Value: 20250228T134722Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -28,11 +31,11 @@ Languages:
         sitecore\ssebastianarokya@gmail.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f87f30c0-998a-42a0-b564-f81bd801f97e"
+      Value: "a8d18dba-e216-4445-9350-4faecd577043"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T144506Z
+      Value: 20250228T152831Z
