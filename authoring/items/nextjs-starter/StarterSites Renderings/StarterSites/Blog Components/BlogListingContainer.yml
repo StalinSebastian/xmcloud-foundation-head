@@ -26,7 +26,7 @@ SharedFields:
   Value: "blog-listing-container"
 - ID: "592a1ce7-abe0-4986-9783-0a34f3961dc0"
   Hint: Placeholder
-  Value: 
+  Value: "headless-main"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
@@ -97,14 +97,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bcedda38-4f49-43da-a81a-161ec16ffc3d"
+      Value: "dd6d9499-09c7-4f46-8b70-0611bd0975e4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250303T045934Z
+      Value: 20250303T052403Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

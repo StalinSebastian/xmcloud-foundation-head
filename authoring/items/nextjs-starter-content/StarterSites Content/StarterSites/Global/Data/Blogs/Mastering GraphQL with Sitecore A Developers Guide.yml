@@ -1,0 +1,83 @@
+﻿---
+ID: "ae4af9ef-c7a7-4372-b50c-784425ccf011"
+Parent: "f0e5d05e-70c5-463c-87c8-091eeae21309"
+Template: "3f65f364-d34d-4d7d-af0c-40ab9571d2f9"
+Path: /sitecore/content/StarterSites/Global/Data/Blogs/Mastering GraphQL with Sitecore A Developers Guide
+SharedFields:
+- ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
+  Hint: BlogPublishDate
+  Value: 20250301T183000Z
+- ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
+  Hint: BlogUrlSlug
+  Value: "mastering-graphql-with-sitecore-developers-guide"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e5a6a5-608e-4d2e-9d90-a88cb2bf4813"
+      Hint: BlogCategory
+      Value: |
+        {D66D0B2C-C401-4083-84DE-5CAF9386D1F2}
+        {EEC242DA-3962-470A-BE21-1F22C893A40F}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250303T110041Z
+    - ID: "42cac335-d961-42d1-9343-ed1b2f0b1965"
+      Hint: BlogImage
+      Value: |
+        <image mediaid="{44F89E85-2F8B-46DE-A759-B2446F2B41A4}" />
+    - ID: "4c456dbd-c48b-41e2-95b1-dd4a369f19b4"
+      Hint: BlogSummary
+      Value: "Unlock the power of Sitecore’s GraphQL API to build efficient, headless applications with this developer-focused guide."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "629ad496-dbe2-43d1-b16b-a63241d979b4"
+      Hint: BlogTags
+      Value: |
+        {B8208AE4-C716-4BDD-A9F4-49EBD71C629D}
+        {209C42D0-4F6C-45D5-A628-C00E22561448}
+        {60261E6C-2D4A-4265-9C53-360B231D28BF}
+        {9A87854B-A4F9-4791-BD34-A2DFD3F169DF}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9c15cfbc-dbc6-4351-b9f2-bacaa64ff751"
+    - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
+      Hint: BlogAuthor
+      Value: "{0687957B-1A71-493C-83FA-A2E441EF6548}"
+    - ID: "b54a8738-9243-45fb-a7bc-ab71ee1b7e41"
+      Hint: BlogHeading
+      Value: "Mastering GraphQL with Sitecore: A Developer’s Guide"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "cd74eb9d-a3c5-4ef9-a668-8408a3775f4f"
+      Hint: BlogContent
+      Value: |
+        <div>GraphQL has become a cornerstone of headless architectures, and Sitecore&rsquo;s Edge GraphQL API makes it easier than ever to fetch exactly the data you need for your Next.js frontend. Here&rsquo;s how to master it:<br />
+        <ul class="marker:text-secondary">
+            <li class="break-words"><strong>Understand the Schema:</strong> Start by exploring Sitecore&rsquo;s GraphQL schema in the Edge Playground (available in XM Cloud). Identify key types like <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">Item</span> and <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">Layout</span>.</li>
+            <br />
+            <li class="break-words"><strong>Write Efficient Queries:</strong> Avoid over-fetching by specifying only the fields you need, e.g., <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">item { name, fields { name, value } }</span>.</li>
+            <br />
+            <li class="break-words"><strong>Handle Dynamic Routes:</strong> Use GraphQL variables to fetch blog posts by slug, like <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">query($path: String!) { item(path: $path) { ...BlogPostFields } }</span>.</li>
+            <br />
+            <li class="break-words"><strong>Integrate with Next.js:</strong> Leverage <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">getStaticProps</span> or <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">getServerSideProps</span> to fetch GraphQL data at build time or runtime.</li>
+            <br />
+            <li class="break-words"><strong>Optimize with Fragments:</strong> Reuse common field sets (e.g., blog metadata) across queries for cleaner code.<br />
+            With Sitecore&rsquo;s GraphQL, you can streamline development, reduce API calls, and deliver lightning-fast experiences&mdash;perfect for a scalable blogging system.</li>
+        </ul>
+        </div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250303T110415Z

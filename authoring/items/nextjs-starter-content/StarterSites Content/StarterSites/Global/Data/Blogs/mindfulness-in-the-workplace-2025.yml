@@ -1,0 +1,86 @@
+﻿---
+ID: "049dcc47-3b13-4bc0-954c-d4f75a66ffa1"
+Parent: "f0e5d05e-70c5-463c-87c8-091eeae21309"
+Template: "3f65f364-d34d-4d7d-af0c-40ab9571d2f9"
+Path: "/sitecore/content/StarterSites/Global/Data/Blogs/mindfulness-in-the-workplace-2025"
+SharedFields:
+- ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
+  Hint: BlogPublishDate
+  Value: 20250309T183000Z
+- ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
+  Hint: BlogUrlSlug
+  Value: "mindfulness-in-the-workplace-2025"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Mindfulness in the Workplace: Boosting Productivity in 2025"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e5a6a5-608e-4d2e-9d90-a88cb2bf4813"
+      Hint: BlogCategory
+      Value: |
+        {D48C71E0-6DE4-4A02-9D3E-B5E37BA800B4}
+        {62662D05-E8CA-4681-9EBE-C73A3D838BA3}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250303T110512Z
+    - ID: "42cac335-d961-42d1-9343-ed1b2f0b1965"
+      Hint: BlogImage
+      Value: |
+        <image mediaid="{CDBEE0B6-0FD3-4ECD-8F5F-763567272438}" />
+    - ID: "4c456dbd-c48b-41e2-95b1-dd4a369f19b4"
+      Hint: BlogSummary
+      Value: Learn how mindfulness techniques can enhance focus, reduce stress, and improve productivity in the modern workplace.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "629ad496-dbe2-43d1-b16b-a63241d979b4"
+      Hint: BlogTags
+      Value: |
+        {3EF23682-B752-4B2E-932B-E75719612974}
+        {8345B09E-CFFF-488B-9995-67EEB3FA516E}
+        {41AF3F78-F9DF-451B-B1C6-494B1AA9DB7C}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8eab799c-a40e-4a8d-9163-8a45c8d42514"
+    - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
+      Hint: BlogAuthor
+      Value: "{8700E630-752A-4F96-BB82-CC52A3259525}"
+    - ID: "b54a8738-9243-45fb-a7bc-ab71ee1b7e41"
+      Hint: BlogHeading
+      Value: "Mindfulness in the Workplace: Boosting Productivity in 2025"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "cd74eb9d-a3c5-4ef9-a668-8408a3775f4f"
+      Hint: BlogContent
+      Value: |
+        <div>In the fast-paced world of 2025, workplace stress is at an all-time high. Mindfulness&mdash;paying attention to the present moment without judgment&mdash;offers a solution. Here&rsquo;s how to integrate it into your workday:<br />
+        <ul class="marker:text-secondary">
+            <li class="break-words"><strong>Start with Breathing Exercises:</strong> Take five minutes to focus on deep, slow breaths to reset your mind before a big meeting.</li>
+            <br />
+            <li class="break-words"><strong>Practice Single-Tasking:</strong> Focus on one task at a time instead of multitasking to improve efficiency and quality.</li>
+            <br />
+            <li class="break-words"><strong>Take Short Breaks:</strong> Step away for a quick walk or meditation session to recharge during long work hours.</li>
+            <br />
+            <li class="break-words"><strong>Set Intentions:</strong> Begin each day by writing down your goals to stay grounded and purposeful.</li>
+            <br />
+            <li class="break-words"><strong>Foster Team Mindfulness:</strong> Encourage group stretching or a minute of silence before team brainstorming sessions.<br />
+            Companies adopting mindfulness report happier employees and a 20% boost in productivity. Make 2025 the year you bring calm to the chaos of work.</li>
+        </ul>
+        </div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250303T111207Z

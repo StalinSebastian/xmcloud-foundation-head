@@ -6,7 +6,7 @@ Path: "/sitecore/content/StarterSites/Global/Data/Blogs/exploring-the-future-of-
 SharedFields:
 - ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
   Hint: BlogPublishDate
-  Value: 20250227T183000Z
+  Value: 20250303T070000Z
 - ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
   Hint: BlogUrlSlug
   Value: "exploring-the-future-of-headless-cms-in-2025"
@@ -53,7 +53,7 @@ Languages:
         {60261E6C-2D4A-4265-9C53-360B231D28BF}
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "290910de-659a-4640-9d36-2db0a14110d5"
+      Value: "7b429268-09df-4e25-84d0-67839bd16696"
     - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
       Hint: BlogAuthor
       Value: "{927D4A6D-21FB-42B7-B3B0-3BA510E9F9BC}"
@@ -80,4 +80,4 @@ Languages:
         </div>
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T175155Z
+      Value: 20250303T070056Z

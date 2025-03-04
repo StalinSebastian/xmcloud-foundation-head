@@ -1,0 +1,41 @@
+﻿---
+ID: "8700e630-752a-4f96-bb82-cc52a3259525"
+Parent: "333d8015-d585-4ab6-b20b-764047722a02"
+Template: "454e36ac-ae03-466d-9790-a78368a40631"
+Path: /sitecore/content/StarterSites/Global/Data/Blog Authors/Sarah Lee
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03aefc68-4d61-4957-ae20-b8ad4a76c298"
+      Hint: BlogAuthorName
+      Value: Sarah Lee
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250303T110731Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5e65f660-7b0b-427a-956e-8608edb0ecc0"
+      Hint: BlogAuthorBio
+      Value: <div>Sarah is a wellness coach and writer dedicated to helping professionals find balance in their lives.</div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "93077885-4cd2-43c2-a17f-3a9766a9f301"
+    - ID: "b8e46bee-4eed-4839-8d1f-064c4b656673"
+      Hint: BlogAuthorPhoto
+      Value: |
+        <image mediaid="{6718551D-1545-4CC7-B87A-426B54E67DF7}" alt="Sarah Lee" height="" width="" hspace="" vspace="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250303T110957Z

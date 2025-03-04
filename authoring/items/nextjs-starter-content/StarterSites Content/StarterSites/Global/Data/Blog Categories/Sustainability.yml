@@ -1,19 +1,16 @@
 ﻿---
-ID: "4eba3ceb-ae65-4b61-ae64-3147b6730167"
-Parent: "a13e3762-39bc-4fba-8c84-30ed1d1f292e"
-Template: "91ab77ae-de39-45d5-9754-1d03c49abf12"
-Path: /sitecore/content/StarterSites/Global/Data/Blog Tags/TravelDestinations
+ID: "49d32054-90e0-4074-b366-9e51b82cb8a3"
+Parent: "3d2ee9f6-dd92-46fc-b193-8bd570a6c204"
+Template: "f08d2b76-4f8a-4810-bcba-f0eb49105e85"
+Path: /sitecore/content/StarterSites/Global/Data/Blog Categories/Sustainability
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "0c46db7c-b3f4-4287-a07c-9a4c7b45e36a"
-      Hint: BlogTagName
-      Value: TravelDestinations
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250228T153104Z
+      Value: 20250303T105607Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -24,11 +21,14 @@ Languages:
         sitecore\ssebastianarokya@gmail.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c9004ed9-f7c7-4f59-9847-743dbc2f3fae"
+      Value: "1e8b01db-b931-4e10-9704-5f696ae87a21"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
+    - ID: "bd2af83a-8f3c-4d57-a6d3-d417fb25698f"
+      Hint: BlogCategoryName
+      Value: Sustainability
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T153442Z
+      Value: 20250303T105607Z

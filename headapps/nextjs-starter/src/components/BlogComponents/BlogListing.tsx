@@ -9,13 +9,10 @@ import {
   Image as JssImage,
   ComponentRendering,
   DateField,
+  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
-import { GraphQLRequestClient } from '@sitecore-jss/sitecore-jss-nextjs/graphql';
-
-const graphQLClient = new GraphQLRequestClient('https://xmcloudcm.localhost/sitecore/api/graph/edge', {
-  apiKey: 'c0a7c9d5-b821-4656-b1e1-e219e0a2a2f2',
-});
+import graphqlClientFactory from 'lib/graphql-client-factory';
 
 interface BlogAuthor {
   targetItem: BlogAuthorFields;
@@ -50,7 +47,7 @@ interface BlogPost {
   content: Field<string>;
   featuredImage: ImageField & { metadata?: { [key: string]: unknown } };
   publishDate: Field<string>;
-  author: BlogAuthorFields;
+  author: BlogAuthor;
   categories: BlogCategory[];
   tags: BlogTag[];
 }
@@ -69,6 +66,7 @@ interface BlogListingProps {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   fields: Fields;
+  blogPosts: BlogPost[];
 }
 
 const GET_BLOG_POSTS = `query GetBlogPosts($dataSource: String!, $first: Int!, $after: String) {
@@ -175,25 +173,7 @@ const Image = (props: ImageProps): JSX.Element => {
 
 export const Default = (props: BlogListingProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await graphQLClient.request(GET_BLOG_POSTS, {
-          dataSource: props.rendering.dataSource,
-          first: 10,
-          after: "",
-        });
-        setPosts(response?.search?.results || []);
-      } catch (error) {
-        console.error('Error fetching blog posts:', error);
-        setPosts([]);
-      }
-    };
-    fetchPosts();
-  }, [props.fields]);
+  const posts = props.blogPosts;
 
   return (
     <div className={`component ${props.params.styles}`} id={id || undefined}>
@@ -201,7 +181,7 @@ export const Default = (props: BlogListingProps): JSX.Element => {
         <h1 className='blog-title text-center'>{props.fields.BlogListingTitle?.value}</h1>
         <p className='blog-description text-center'>{props.fields.BlogListingDescription?.value}</p>
 
-        {posts.map((blog: BlogPost, index) => (
+        {posts && posts.map((blog: BlogPost, index) => (
           <>
             <div key={blog.id} className="blog-post">
 
@@ -261,4 +241,20 @@ export const Default = (props: BlogListingProps): JSX.Element => {
       </div>
     </div>
   );
+}
+
+export const getStaticProps: GetStaticComponentProps = async (rendering, layoutData) => {
+  const graphQLClient = graphqlClientFactory();
+
+  const response = await graphQLClient.request<BlogPost[]>(GET_BLOG_POSTS,
+  {
+    dataSource: rendering.dataSource,
+    first: 10,
+    after: "",
+    language: layoutData.sitecore.context.language
+  });
+
+  return {
+    blogPosts: response?.search?.results || [],
+  };
 }

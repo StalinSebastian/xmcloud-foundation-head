@@ -1,0 +1,34 @@
+﻿---
+ID: "9a87854b-a4f9-4791-bd34-a2dfd3f169df"
+Parent: "a13e3762-39bc-4fba-8c84-30ed1d1f292e"
+Template: "91ab77ae-de39-45d5-9754-1d03c49abf12"
+Path: /sitecore/content/StarterSites/Global/Data/Blog Tags/Development
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c46db7c-b3f4-4287-a07c-9a4c7b45e36a"
+      Hint: BlogTagName
+      Value: Development
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250303T110358Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "49b27ad7-72c7-40b2-9c4f-8ba574c4084c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250303T110358Z

@@ -9,7 +9,7 @@ SharedFields:
   Value: BlogListing
 - ID: "069a8361-b1cd-437c-8c32-a3be78941446"
   Hint: Placeholders
-  Value: "{65122B20-1990-4335-9906-B9A556F6B7E2}"
+  Value: 
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: SXA_MDI/16x16/Promo.png
@@ -22,6 +22,9 @@ SharedFields:
 - ID: "34e81e40-1d4d-45b0-bcf1-a0ffe5521685"
   Hint: RenderingCssClass
   Value: "blog-list"
+- ID: "592a1ce7-abe0-4986-9783-0a34f3961dc0"
+  Hint: Placeholder
+  Value: "column-left"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
@@ -48,7 +51,7 @@ SharedFields:
   Value: 
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
-  Value: IsRenderingsWithDynamicPlaceholders=true
+  Value: IsRenderingsWithDynamicPlaceholders=false
 Languages:
 - Language: "de-DE"
   Fields:
@@ -92,14 +95,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "35dad974-0da7-4374-a84f-c5806940ff67"
+      Value: "7227d167-f391-4052-82c8-38d3ee696a37"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\ssebastianarokya@gmail.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250302T190707Z
+      Value: 20250303T052214Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

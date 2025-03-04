@@ -1,0 +1,78 @@
+﻿---
+ID: "432e9e72-1124-426c-b7a5-0bd2d43c2f6e"
+Parent: "f0e5d05e-70c5-463c-87c8-091eeae21309"
+Template: "3f65f364-d34d-4d7d-af0c-40ab9571d2f9"
+Path: "/sitecore/content/StarterSites/Global/Data/Blogs/The Rise of Sustainable Living Tips for an Eco-Friendly Home in 2025"
+SharedFields:
+- ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
+  Hint: BlogPublishDate
+  Value: 20250228T183000Z
+- ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
+  Hint: BlogUrlSlug
+  Value: "the-rise-of-sustainable-living-tips-for-2025"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e5a6a5-608e-4d2e-9d90-a88cb2bf4813"
+      Hint: BlogCategory
+      Value: |
+        {D8C797C1-738B-4913-AEFF-335A5A18C6E2}
+        {49D32054-90E0-4074-B366-9E51B82CB8A3}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250303T105339Z
+    - ID: "42cac335-d961-42d1-9343-ed1b2f0b1965"
+      Hint: BlogImage
+      Value: |
+        <image mediaid="{A2A0A8AD-A94D-4590-83E5-6E7AEE56F697}" />
+    - ID: "4c456dbd-c48b-41e2-95b1-dd4a369f19b4"
+      Hint: BlogSummary
+      Value: "Explore practical tips for transforming your home into an eco-friendly sanctuary in 2025, from energy-efficient appliances to sustainable decor."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "629ad496-dbe2-43d1-b16b-a63241d979b4"
+      Hint: BlogTags
+      Value: |
+        {D935B295-04C4-4F28-97EC-3298360ADD16}
+        {967C3ECA-D40B-4138-90D9-2FE7FB0C7C1C}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "842c6c65-30a1-4854-ada6-1e661d8d5a91"
+    - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
+      Hint: BlogAuthor
+      Value: "{927D4A6D-21FB-42B7-B3B0-3BA510E9F9BC}"
+    - ID: "b54a8738-9243-45fb-a7bc-ab71ee1b7e41"
+      Hint: BlogHeading
+      Value: "The Rise of Sustainable Living: Tips for an Eco-Friendly Home in 2025"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\ssebastianarokya@gmail.com
+    - ID: "cd74eb9d-a3c5-4ef9-a668-8408a3775f4f"
+      Hint: BlogContent
+      Value: |
+        <div>As sustainability becomes a global priority, 2025 is shaping up to be the year of eco-conscious living. Transforming your home into an environmentally friendly space doesn&rsquo;t have to be overwhelming&mdash;small changes can make a big impact. Here are five actionable tips:<br />
+        <ol class="marker:text-secondary">
+            <li class="break-words"><strong>Switch to Energy-Efficient Appliances:</strong> Upgrade to appliances with high energy ratings, like smart thermostats or solar-powered water heaters, to reduce your carbon footprint.</li>
+            <br />
+            <li class="break-words"><strong>Embrace Sustainable Materials:</strong> Opt for furniture made from reclaimed wood or recycled metals, and choose organic cotton or bamboo for textiles.</li>
+            <br />
+            <li class="break-words"><strong>Reduce Water Waste:</strong> Install low-flow faucets and showerheads, and consider a rainwater harvesting system for your garden.</li>
+            <br />
+            <li class="break-words"><strong>Grow Your Own Food:</strong> Start a small indoor herb garden or a backyard veggie patch to cut down on store-bought produce.</li>
+            <br />
+            <li class="break-words"><strong>Minimize Single-Use Plastics:</strong> Swap plastic containers for glass or stainless steel alternatives.<br />
+            By adopting these habits, you&rsquo;ll contribute to a healthier planet while creating a stylish, sustainable home.</li>
+        </ol>
+        </div>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250303T110209Z

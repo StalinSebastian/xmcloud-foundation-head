@@ -6,10 +6,13 @@ Path: /sitecore/content/StarterSites/Global/Data/Blogs/A Beginners Guide to Next
 SharedFields:
 - ID: "1ceefe7a-d950-426e-9e1f-56b9c9bf3bf5"
   Hint: BlogPublishDate
-  Value: 20250227T183000Z
+  Value: 20250303T070000Z
 - ID: "91bfccfa-eee5-4bcf-8192-7814dc3ffb99"
   Hint: BlogUrlSlug
   Value: "a-beginners-guide-to-nextjs-with-sitecore-xm-cloud"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 25
 Languages:
 - Language: en
   Versions:
@@ -47,7 +50,7 @@ Languages:
         {209C42D0-4F6C-45D5-A628-C00E22561448}
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "08f17254-6d4a-4afb-9e48-38a40cd25dea"
+      Value: "96601256-7b33-4ea5-ae70-7f5c932284ea"
     - ID: "9adb338a-8c6e-4ba7-8a7b-fb80449b78c5"
       Hint: BlogAuthor
       Value: "{0687957B-1A71-493C-83FA-A2E441EF6548}"
@@ -79,4 +82,4 @@ Languages:
         </div>
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250228T175254Z
+      Value: 20250303T071759Z
