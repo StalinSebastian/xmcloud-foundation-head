@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClearAllCaches.aspx.cs" Inherits="XmCloudAuthoring.Utilities.ClearAllCaches" %>

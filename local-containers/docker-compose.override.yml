@@ -36,6 +36,75 @@ services:
       - "traefik.http.routers.rendering-secure-nextjs.entrypoints=websecure"
       - "traefik.http.routers.rendering-secure-nextjs.rule=Host(`${RENDERING_HOST_NEXTJS}`)"
       - "traefik.http.routers.rendering-secure-nextjs.tls=true"
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+
+  rendering-angularjs:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering-angularjs:${VERSION:-latest}
+    build:
+      context: ./docker/build/rendering-nextjs
+      target: ${BUILD_CONFIGURATION}
+      args:
+        PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
+    ports:
+      - "3001:3000"
+    volumes:
+      - ../headapps/spa-starters/angular:C:\app
+    environment:
+      SITECORE_API_HOST: "http://cm"
+      PUBLIC_URL: "https://${RENDERING_HOST_AngularJS}"
+      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      SITECORE_API_KEY: "${SITECORE_API_KEY_APP_STARTER}"
+      DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
+      SITECORE_MEDIA_URL: "https://${CM_HOST}/"
+      SITECORE_GRAPHQL_ENDPOINT: "https://${CM_HOST}/sitecore/api/graph/edge"
+    depends_on:
+      - cm
+      - nodejs
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.rendering-secure-angularjs.entrypoints=websecure"
+      - "traefik.http.routers.rendering-secure-angularjs.rule=Host(`${RENDERING_HOST_AngularJS}`)"
+      - "traefik.http.routers.rendering-secure-angularjs.tls=true"
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+
+  rendering-playsummit:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering-nextjs:${VERSION:-latest}
+    build:
+      context: ./docker/build/rendering-nextjs
+      target: ${BUILD_CONFIGURATION}
+      args:
+        PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
+    ports:
+      - "3002:3000"
+    volumes:
+      - ../headapps/play-summit:C:\app
+    environment:
+      SITECORE_API_HOST: "http://cm"
+      NEXTJS_DIST_DIR: ".next-container"
+      PUBLIC_URL: "https://${RENDERING_HOST_PlaySummit}"
+      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      SITECORE_API_KEY: "${SITECORE_API_KEY_APP_STARTER}"
+      DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
+      SITECORE_MEDIA_URL: "https://${CM_HOST}/"
+      SITECORE_GRAPHQL_ENDPOINT: "https://${CM_HOST}/sitecore/api/graph/edge"
+    depends_on:
+      - cm
+      - nodejs
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.rendering-secure-playsummit.entrypoints=websecure"
+      - "traefik.http.routers.rendering-secure-playsummit.rule=Host(`${RENDERING_HOST_PlaySummit}`)"
+      - "traefik.http.routers.rendering-secure-playsummit.tls=true"
+    deploy:
+      resources:
+        limits:
+          memory: 3G
 
   # Mount the Traefik configuration and certs.
   traefik:
@@ -91,3 +160,11 @@ services:
       XmCloud_PublishingApi_Enabled: "false"
       Sitecore_GraphQL_ExposePlayground: "true"
     entrypoint: powershell -Command "& C:/tools/entrypoints/iis/XmCloudDevelopment.ps1"
+    extra_hosts:
+      - "cm:127.0.0.1"
+      - "xmcloudcm.localhost:127.0.0.1"
+    labels:
+      - "traefik.http.routers.cm.rule=Host(`cm`)"
+      - "traefik.http.routers.cm.middlewares=cm-to-xmcloudcm"
+      - "traefik.http.middlewares.cm-to-xmcloudcm.redirectregex.regex=^https?://cm(.*)"
+      - "traefik.http.middlewares.cm-to-xmcloudcm.redirectregex.replacement=https://xmcloudcm.localhost$${1}"

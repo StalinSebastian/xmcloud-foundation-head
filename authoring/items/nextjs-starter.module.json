@@ -5,11 +5,6 @@
         "path": "nextjs-starter",
         "includes": [
             {
-                "name": "DefaultRenderingHost",
-                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
-                "scope": "singleItem"
-            },
-            {
                 "name": "StarterSites Tempates",
                 "path": "/sitecore/templates/Project/StarterSites"
             },

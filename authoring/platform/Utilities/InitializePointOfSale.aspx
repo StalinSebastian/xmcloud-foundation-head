@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InitializePointOfSale.aspx.cs" Inherits="XmCloudAuthoring.Utilities.InitializePointOfSale" %>

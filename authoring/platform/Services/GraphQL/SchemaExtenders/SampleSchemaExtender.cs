@@ -1,6 +1,9 @@
-﻿using GraphQL.Types;
+﻿using GraphQL;
+using GraphQL.Types;
 using Sitecore.ContentSearch.Utilities;
+using Sitecore.Data;
 using Sitecore.Data.Fields;
+using Sitecore.Data.Items;
 using Sitecore.Security.Accounts;
 using Sitecore.Services.GraphQL.Schemas;
 
@@ -18,6 +21,7 @@ namespace XmCloudAuthoring.Services.GraphQL.SchemaExtenders
                 });
             });
 
+            //Adds New Fields
             ExtendTypes<ObjectGraphType<User>>(type =>
             {
                 type.Field<NonNullGraphType<BooleanGraphType>>(

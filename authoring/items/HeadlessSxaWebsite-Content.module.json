@@ -1,0 +1,26 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "HeadlessSxaWebsite-Content",
+    "references": [ "HeadlessSxaWebsite" ],
+    "items": {
+        "path": "HeadlessSxaWebsite-Content",
+        "includes": [
+            {
+                "name": "sxa-content",
+                "path": "/sitecore/content",
+                "scope": "descendantsOnly",
+                "allowedPushOperations": "CreateAndUpdate",
+                "rules": [
+                    {
+                        "path": "/Home",
+                        "scope": "ignored"
+                    },
+                    {
+                        "path": "/CMP",
+                        "scope": "ignored"
+                    }
+                ]
+            }
+        ]
+    }
+}

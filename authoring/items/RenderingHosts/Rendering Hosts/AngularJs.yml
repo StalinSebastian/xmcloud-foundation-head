@@ -1,0 +1,26 @@
+﻿---
+ID: "8fef3c40-94c0-4443-addb-b9fadf905b35"
+Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
+Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
+Path: /sitecore/system/Settings/Services/Rendering Hosts/AngularJs
+SharedFields:
+- ID: "94470b31-e282-4d8d-bc54-85689efb294c"
+  Hint: ServerSideRenderingEngineConfigUrl
+  Value: "http://rendering-angularjs:3000/api/editing/config"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
+  Hint: ServerSideRenderingEngineApplicationUrl
+  Value: "http://rendering-angularjs:3000"
+- ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
+  Hint: ServerSideRenderingEngineEndpointUrl
+  Value: "http://rendering-angularjs:3000/api/editing/render"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d947de5b-a9bf-463f-b9d0-f7bf659bba71"

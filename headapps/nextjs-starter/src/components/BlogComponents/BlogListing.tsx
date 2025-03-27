@@ -1,18 +1,17 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 
 import {
   ComponentParams,
   Field,
   ImageField,
   Text,
-  Image as JssImage,
   ComponentRendering,
   DateField,
   GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import graphqlClientFactory from 'lib/graphql-client-factory';
+import { Image } from 'src/atoms/BlogComponents/JssImage';
 
 interface BlogAuthor {
   targetItem: BlogAuthorFields;
@@ -74,13 +73,9 @@ const GET_BLOG_POSTS = `query GetBlogPosts($dataSource: String!, $first: Int!, $
     where: {
       AND: [
         { name: "_path", value: $dataSource, operator: CONTAINS }
-        {
-          name: "_templates"
-          value: "{3F65F364-D34D-4D7D-AF0C-40AB9571D2F9}"
-          operator: EQ
-        }
+        { name: "_templates", value: "{3F65F364-D34D-4D7D-AF0C-40AB9571D2F9}", operator: EQ }
       ]
-    }, first : $first, after: $after
+    }, first: $first, after: $after
     orderBy: { name: "blogPublishDate", direction: DESC }
   ) {
     total
@@ -122,7 +117,7 @@ const GET_BLOG_POSTS = `query GetBlogPosts($dataSource: String!, $first: Int!, $
             }
           }
         }
-        categories: blogCategory {
+        categories: blogCategories {
           targetItems {
             ... on BlogCategory {
               name: blogCategoryName {
@@ -145,31 +140,14 @@ const GET_BLOG_POSTS = `query GetBlogPosts($dataSource: String!, $first: Int!, $
   }
 }`;
 
-// Replace internal CMS hostname with external one
-const getPublicMediaUrl = (url: string) => {
-  if (!url) return url;
-  return url.replace('https://cm', 'https://xmcloudcm.localhost'); // Update with your external CMS hostname
-};
-
 interface FeaturedImage {
   value: ImageField
   src: string;
   alt: string;
 }
-interface ImageProps {
+export interface ImageProps {
   field: FeaturedImage;
 }
-
-const Image = (props: ImageProps): JSX.Element => {
-  const [src, setSrc] = useState(props.field.src);
-  useEffect(() => {
-    if (props.field?.value) {
-      setSrc(getPublicMediaUrl(props.field?.src));
-    }
-  }, [props.field?.src]);
-
-  return <JssImage field={{ ...props.field?.value, value: { ...props.field?.value, src } }} />;
-};
 
 export const Default = (props: BlogListingProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
@@ -246,15 +224,14 @@ export const Default = (props: BlogListingProps): JSX.Element => {
 export const getStaticProps: GetStaticComponentProps = async (rendering, layoutData) => {
   const graphQLClient = graphqlClientFactory();
 
-  const response = await graphQLClient.request<BlogPost[]>(GET_BLOG_POSTS,
-  {
-    dataSource: rendering.dataSource,
+  const response = await graphQLClient.request<BlogPost[]>(GET_BLOG_POSTS, {
+    dataSource: rendering.dataSource ?? '{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}',
     first: 10,
     after: "",
-    language: layoutData.sitecore.context.language
+    language: layoutData.sitecore.context.language,
   });
 
   return {
     blogPosts: response?.search?.results || [],
   };
-}
+};

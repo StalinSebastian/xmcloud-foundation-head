@@ -41,6 +41,10 @@ Write-Host "Preparing your Sitecore Containers environment!" -ForegroundColor Gr
 
 $renderingHostName = "xmc-starter-js.localhost"
 $nextjsHostName = "nextjs.$renderingHostName"
+$angularHostName = "angular.$renderingHostName"
+
+$playSummitRenderingHostName = "xmc-playsummit.localhost"
+$playSummitHostName = "nextjs.$playSummitRenderingHostName"
 
 ################################################
 # Retrieve and import SitecoreDockerTools module
@@ -89,6 +93,7 @@ try {
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
     & $mkcert "*.$renderingHostName"
+    & $mkcert "*.$playSummitRenderingHostName"
     & $mkcert "xmcloudcm.localhost"
 
     # stash CAROOT path for messaging at the end of the script
@@ -111,7 +116,8 @@ Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
 Add-HostsEntry "xmcloudcm.localhost"
 Add-HostsEntry $nextjsHostName
-
+Add-HostsEntry $angularHostName
+Add-HostsEntry $playSummitHostName
 ###############################
 # Generate scjssconfig
 ###############################
