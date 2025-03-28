@@ -1,11 +1,9 @@
 using AspNetCoreStarter.Configuration;
 using AspNetCoreStarter.Models;
 using Microsoft.AspNetCore.Localization;
-using Sitecore.AspNet.ExperienceEditor;
-using Sitecore.AspNet.RenderingEngine.Extensions;
-using Sitecore.AspNet.RenderingEngine.Localization;
-using Sitecore.AspNet.Tracking;
-using Sitecore.LayoutService.Client.Extensions;
+using Sitecore.AspNetCore.SDK.ExperienceEditor.Extensions;
+using Sitecore.AspNetCore.SDK.LayoutService.Client.Extensions;
+using Sitecore.AspNetCore.SDK.RenderingEngine.Extensions;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -70,18 +68,18 @@ builder.Services.AddSitecoreRenderingEngine(options =>
             //This is an example to show how we can target custom routes for the Experience Editor by adding custom mapping handlers.
             options.MapToRequest((sitecoreResponse, scPath, httpRequest) =>
                 httpRequest.Path = scPath + sitecoreResponse?.Sitecore?.Route?.DatabaseName);
-        })
-    .WithTracking();
+        });
+    //.WithTracking();
 
-builder.Services.AddSitecoreVisitorIdentification(options =>
-{
-    // Usually SitecoreInstanceHostName is same as Layout service but can be any Sitecore CD/CM instance which shares same AspNet session with Layout Service.
-    // This Sitecore instance will be used for Visitor identification.
-    var uriSetting = builder.Configuration.GetSection("Analytics:SitecoreInstanceUri").Get<Uri>();
-    options.SitecoreInstanceUri = uriSetting ?? new Uri("https://SitecoreInstanceHostName");
-});
+//builder.Services.AddSitecoreVisitorIdentification(options =>
+//{
+//    // Usually SitecoreInstanceHostName is same as Layout service but can be any Sitecore CD/CM instance which shares same AspNet session with Layout Service.
+//    // This Sitecore instance will be used for Visitor identification.
+//    var uriSetting = builder.Configuration.GetSection("Analytics:SitecoreInstanceUri").Get<Uri>();
+//    options.SitecoreInstanceUri = uriSetting ?? new Uri("https://SitecoreInstanceHostName");
+//});
 
-// This configuration necessary for proper resolving of IP address and Scheme of original request in case reverse proxies sends XForwarded sets of headers. See Tracking documentation for details.
+//This configuration necessary for proper resolving of IP address and Scheme of original request in case reverse proxies sends XForwarded sets of headers. See Tracking documentation for details.
 // Uncomment if you expect to resolve x-forwarded headers.
 //builder.Services.Configure<ForwardedHeadersOptions>(options =>
 //{
@@ -106,7 +104,7 @@ app.UseStaticFiles();
 // Make sure to resolve IP address before Rendering engine functionality. It will allow xDb to record real client IP address.
 // Uncomment if you expect to resolve x-forwarded headers.
 //app.UseForwardedHeaders();
-app.UseSitecoreVisitorIdentification();
+//app.UseSitecoreVisitorIdentification();
 
 //Adds localization functionality
 //Calling UseSitecoreRequestLocalization() on the localization  allows culture to be resolved from both the sc_lang query string and the culture token from route data.

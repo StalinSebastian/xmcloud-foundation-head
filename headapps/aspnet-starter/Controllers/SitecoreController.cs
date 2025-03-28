@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Sitecore.AspNet.RenderingEngine;
-using Sitecore.AspNet.RenderingEngine.Binding.Attributes;
-using Sitecore.AspNet.RenderingEngine.Filters;
-using Sitecore.LayoutService.Client.Response.Model;
+using Sitecore.AspNetCore.SDK.LayoutService.Client.Response.Model;
+using Sitecore.AspNetCore.SDK.RenderingEngine.Binding.Attributes;
+using Sitecore.AspNetCore.SDK.RenderingEngine.Extensions;
+using Sitecore.AspNetCore.SDK.RenderingEngine.Interfaces;
 
 namespace AspNetCoreStarter.Controllers
 {

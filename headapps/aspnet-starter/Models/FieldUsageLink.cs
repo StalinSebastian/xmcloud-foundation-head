@@ -1,4 +1,4 @@
-using Sitecore.LayoutService.Client.Response.Model.Fields;
+using Sitecore.AspNetCore.SDK.LayoutService.Client.Response.Model.Fields;
 
 namespace AspNetCoreStarter.Models
 {

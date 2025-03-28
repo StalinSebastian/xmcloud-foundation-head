@@ -1,9 +1,8 @@
 @model HeadingAndDescription
 @{
     var component = this.SitecoreComponent()!;
-    var serializerSettings = Sitecore.LayoutService.Client.Newtonsoft.NewtonsoftLayoutServiceSerializer.CreateSerializerSettings();    
     var context = this.Context.GetSitecoreRenderingContext()?.Response?.Content?.Sitecore;
-    var jsonContext = Newtonsoft.Json.JsonConvert.SerializeObject(context, serializerSettings);
+    var jsonContext = Newtonsoft.Json.JsonConvert.SerializeObject(context);
 }
 <div class="pt-3" id="@component.Id" data-e2e-id="@component.Name">
   <h4 asp-for="Heading"></h4>
