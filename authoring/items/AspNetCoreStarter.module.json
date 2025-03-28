@@ -1,0 +1,39 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "AspNetCoreStarter",
+    "name": "AspNetCoreStarter",
+    "items" : {
+        "path": "aspnet-core-starter",
+        "includes": [
+            {
+                "name": "api-key",
+                "path": "/sitecore/system/Settings/Services/API Keys/aspnet-starter",
+                "scope": "singleItem"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/aspnet-starter"
+            },
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/aspnet-starter"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/aspnet-starter"
+            },
+            {
+                "name": "placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/aspnet-starter"
+            },
+            {
+                "name": "content",
+                "path": "/sitecore/content/aspnet-starter"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/aspnet-starter"
+            }
+        ]
+    }
+}

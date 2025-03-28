@@ -1,40 +1,99 @@
-# XM Cloud Front End Application Starter Kits + Blogs with GraphQL
+# xmcloud-foundation-head
 
-This repository contains the Next.js Starter Kit, and the SPA Starters monorepo (which includes a Node Proxy Application and and SPA starter apps) for Sitecore XM Cloud Development. It is intended to get developers up and running quickly with a new front end project that is integrated with Sitecore XM Cloud.
-![alt text](image.png)
-## GitHub Template
+## About this Solution
+This solution is designed to help developers learn and get started quickly
+with Sitecore Containers, the ASP.NET Core Rendering SDK, and Sitecore
+Content Serialization.
 
-This Github repository is a template that can be used to create your own repository. To get started, click the `Use this template` button at the top of the repository.
+For simplicity, this solution does not implement Sitecore Helix conventions for
+solution architecture. As you begin building your Sitecore solution,
+you should review [Sitecore Helix](https://helix.sitecore.net/) and the
+[Sitecore Helix Examples](https://sitecore.github.io/Helix.Examples/) for guidance
+on implementing a modular solution architecture.
 
-### Prerequisites
+## Support
+The template output as provided is supported by Sitecore. Once changed or amended,
+the solution becomes a custom implementation and is subject to limitations as
+defined in Sitecore's [scope of support](https://kb.sitecore.net/articles/463549#ScopeOfSupport).
 
-- Access to an Sitecore XM Cloud Environment
-- [Node.js LTS](https://nodejs.org/en/)
+## Prerequisites
+* .NET 6.0 SDK
+* .NET Framework 4.8 SDK
+* Visual Studio 2019
+* Docker for Windows, with Windows Containers enabled
 
-### Getting Started Guide
+See Sitecore Containers documentation for more information on system requirements.
 
-For developers new to XM Cloud you can follow the Getting Started Guide on the [Sitecore Documentation Site](https://doc.sitecore.com/xmc) to get up and running with XM Cloud. This will walk you through the process of creating a new XM Cloud Project, provisioning an Environment, deploying the NextJs Starter Kit, and finally creating your first Component.
+## What's Included
+* A `docker-compose` environment for each Sitecore topology (XPO, XP1, XM1)
+  with an ASP.NET Core rendering host.
+  > The containers structure is organized by specific topology environment (see `run\sitecore-xp0`, `run\sitecore-xp1`, `run\sitecore-xm1`).
+  > The included `docker-compose.yml` is a stock environment from the Sitecore
+  > Container Support Package. All changes/additions for this solution are included
+  > in the `docker-compose.override.yml`.
 
-### Running the Next.js Starter Kit
+* Serialized items for the Styleguide sample site (see `src\Items.module.config`).
+* An MSBuild project for an ASP.NET Core application which renders
+  the site (see `src\rendering`).
+* An MSBuild project for deploying configuration and code into
+  the Sitecore Content Management role. (see `src\platform`).
 
-- Log into the Sitecore XM Cloud Deploy Portal, locate your Environment and select the `Developer Settings` tab.
-- Ensure that the `Preview` toggle is enabled.
-- In the `Local Development` section, click to copy the sample `.env` file contents to your clipboard.
-- Create a new `.env.local` file in the `./headapps/nextjs-starter` folder of this repository and paste the contents from your clipboard.
-- Run the following commands in the root of the repository to start the NextJs application:
-  ```bash
-  cd headapps/nextjs-starter
-  npm install
-  npm run start:connected
-  ```
-- You should now be able to access your site on `http://localhost:3000` and see your changes in real-time as you make them.
+## Running this Solution
+1. If your local IIS is listening on port 443, you'll need to stop it.
+   > This requires an elevated PowerShell or command prompt.
+   ```
+   iisreset /stop
+   ```
 
-### SPA Starters Monorepo and Angular SPA
+1. Before you can run the solution, you will need to prepare the following
+   for the Sitecore container environment:
+   * A valid/trusted wildcard certificate for `*.xmcloud_foundation_head.localhost`
+   * Hosts file entries for `xmcloud_foundation_head.localhost`
+   * Required environment variable values in `.env` for the Sitecore instance
+     * (Can be done once, then checked into source control.)
 
-A new starter SPA based on Angular has been introduced with JSS v22.3.0. The Angular starter has been designed to be compatible with XM Cloud and should be used with the provided node XM Cloud proxy application to handle server-side rendering (SSR), data queries, personalization and more. For more details and information on how to run and deploy the Angular starter and proxy to XM Cloud have a look at [SPA starters monorepo](headapps/spa-starters/)
+   See Sitecore Containers documentation for more information on these
+   preparation steps. The provided `init.ps1` will take care of them,
+   but **you should review its contents before running.**
 
-## Disconnected offline development
+   > You must use an elevated/Administrator Windows PowerShell 5.1 prompt for
+   > this command, PowerShell 7 is not supported at this time.
 
-It is possible to mock a small subset of the XM Cloud Application elements to enable offline development. This can allow for a disconnected development experience, however it is recommend to work in the default connected mode.
+    ```ps1
+    .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword" -Topology xp0
+    ```
+    The ```-Topology ``` parameter specify topology you need. This parameter is optional. The default value ```xp0```
 
-You can find more information about how setup the offline development experience [here](./local-containers/README.md)
+    If you check your `.env` into source control, other developers
+    can prepare a certificate and hosts file entries by simply running:
+
+    ```ps1
+    .\init.ps1
+    ```
+
+    > Out of the box, this example does not include `.env` in the `.gitignore`.
+    > Individual users may override values using process or system environment variables.
+    > This file does contain passwords that would provide access to the running containers
+    > in the developer's environment. If your Sitecore solution and/or its data are sensitive,
+    > you may want to exclude these from source control and provide another
+    > means of centrally configuring the information within.
+
+1. After completing this environment preparation, run the startup script
+   from the solution root:
+    ```ps1
+    .\up.ps1
+    ```
+
+1. When prompted, log into Sitecore via your browser, and
+   accept the device authorization.
+
+1. Wait for the startup script to open browser tabs for the rendered site
+   and Sitecore Launchpad.
+
+## Using the Solution
+* A publish of the `Platform` project will update the running `cm` service.
+* The running `rendering` service uses `dotnet watch` and will recompile
+  automatically for any changes you make. You can also run the `Rendering`
+  project directly from Visual Studio.
+* Review README's found in the projects and throughout the solution
+  for additional information.
