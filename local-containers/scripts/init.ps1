@@ -46,6 +46,7 @@ $angularHostName = "angular.$renderingHostName"
 $playSummitRenderingHostName = "xmc-playsummit.localhost"
 $playSummitHostName = "nextjs.$playSummitRenderingHostName"
 
+$aspnetCoreHostName = "aspnetcore.$renderingHostName"
 ################################################
 # Retrieve and import SitecoreDockerTools module
 ################################################
@@ -118,6 +119,7 @@ Add-HostsEntry "xmcloudcm.localhost"
 Add-HostsEntry $nextjsHostName
 Add-HostsEntry $angularHostName
 Add-HostsEntry $playSummitHostName
+Add-HostsEntry $aspnetCoreHostName
 ###############################
 # Generate scjssconfig
 ###############################
@@ -142,8 +144,6 @@ Set-EnvFileVariable "JSS_EDITING_SECRET" -Value $jssEditingSecret -Path $envFile
 ###############################
 
 if ($InitEnv) {
-
-    
 
     Write-Host "Populating required .env file values..." -ForegroundColor Green
 

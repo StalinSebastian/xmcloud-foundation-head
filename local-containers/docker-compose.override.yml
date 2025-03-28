@@ -93,6 +93,7 @@ services:
       DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
       SITECORE_MEDIA_URL: "https://${CM_HOST}/"
       SITECORE_GRAPHQL_ENDPOINT: "https://${CM_HOST}/sitecore/api/graph/edge"
+      NEXT_PUBLIC_MEDIA_BASE_URL: "https://${CM_HOST}"
     depends_on:
       - cm
       - nodejs
@@ -105,6 +106,39 @@ services:
       resources:
         limits:
           memory: 3G
+
+  rendering-aspnetcore:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering-aspnetcore:${VERSION:-latest}
+    build:
+      context: ./docker/build/rendering-aspnetcore
+      args:
+        BASE_IMAGE: ${NETCORE_BUILD_IMAGE}-${EXTERNAL_IMAGE_TAG_SUFFIX}
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "http://*:80"
+      DOTNET_WATCH_RESTART_ON_RUDE_EDIT: true
+      DOTNET_WATCH_SUPPRESS_LAUNCH_BROWSER: true
+      MVP_RENDERING_EDITING_HOST_URI: "http://rendering-aspnetcore"
+      Sitecore__EnableEditingMode: "true"
+      Sitecore__EnableLocalContainer: "true"
+      Sitecore__LocalContainerLayoutUri: "http://cm/sitecore/api/graph/edge"
+      Sitecore__EdgeContextId: ${SITECORE_API_KEY_APP_STARTER}
+      Sitecore__EditingSecret: ${EDITING_SECRET}
+      Sitecore__DefaultSiteName: ${SITE_NAME}
+    ports:
+      - "80:80"
+    command: ["dotnet", "watch", "run", -v, "--urls", "http://*:80"]
+    volumes:
+      - ..\headapps\aspnet-starter:c:\app
+      - c:\app\obj
+      - c:\app\bin
+    depends_on:
+      - cm
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.aspnet-core-starter-secure.entrypoints=websecure"
+      - "traefik.http.routers.aspnet-core-starter-secure.rule=Host(`${RENDERING_HOST_AspnetCore}`)"
+      - "traefik.http.routers.aspnet-core-starter-secure.tls=true"
 
   # Mount the Traefik configuration and certs.
   traefik:
